@@ -1,0 +1,67 @@
+/*let filme = {
+diretor: "Tobias lindholm",
+nome: "O enfermeiro da Noite",
+anodelançamento: 2022,
+elenco: ["Eddie Redmayne", "Jessica Chastain", "Kin Dickens"],
+visto: false,
+}
+filme.lista = ["Charles Cullen", "Ammy Loughren", "Linda Garran"];
+console.log(filme.elenco[0] + " ->" + filme.lista[0]);
+console.log(filme.elenco[1] + " ->" + filme.lista[1]);
+console.log(filme.elenco[2] + " ->" + filme.lista[2]);
+filme.elenco[0] = "xuxa";
+console.log(filme.elenco[0]); 
+
+console.log(filme.diretor)
+console.log(filme["nome"])
+console.log(filme.anodelançamento)
+console.log(filme["elenco"])
+console.log(filme.visto)
+
+
+
+let pessoa = {
+nome: "Camila",
+idade: 25,
+gêneroMusical: " Rock"
+};
+console.log(`O nome da pessoa é ${pessoa.nome}, ela tem ${pessoa.idade} anos e gosta muito de ${pessoa.gêneroMusical}`)
+
+
+const usuario = {
+nome: 'Prof',
+idade: 25, 
+email: 'prof@senacrs.com.br',
+cidade: 'São Paulo'
+}
+ const novoUsuario = {
+     ...usuario,
+     nome: 'João',
+    idade: 28
+ }
+ console.log(usuario);
+ console.log(novoUsuario);
+ 
+const listaDeNomes = ["Mika", "Paula", "Vitor"]
+const copiaListaDeNomes = [...listaDeNomes]
+console.log(copiaListaDeNomes) 
+*/
+
+let pessoa = {
+    nome: "Camila",
+    idade: 25,
+    gêneroMusical: " Rock"
+}
+
+function lerPessoa(obj){
+    let novoObj = {...obj,
+   listComida: ["Batata frita", "Hamburguer"],
+   melhorAmigo: {
+    nome: "Felipe",
+    idade: 30
+   }
+}
+    console.log(`O nome da pessoa é ${novoObj.nome} e suas comidas preferidas são ${novoObj.listComida}, seu melhor amigo se chama ${novoObj.melhorAmigo.nome} e tem ${novoObj.melhorAmigo.idade}`);
+    }
+
+lerPessoa(pessoa);
